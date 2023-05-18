@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+      <div>
+        <div id="navbar-bsrr">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://www.pdmrindia.com/">PDMR User Management System</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../home/home.html">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../features/features.html">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../getall/getall.html">Users-List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../adduser/adduser.html">Add-User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../getuser/getuser.html">Get-User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../deleteuser/deleteuser.html">Delete-User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../updateuser/updateuser.html">Update-User</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Get User</a>
+                      <a class="dropdown-item" href="#">Get All User</a>
+                      <a class="dropdown-item" href="#">Delete User</a>
+                      <a class="dropdown-item" href="#">Update User</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-sm-2" type="search" placeholder="Search">
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div style="display: flex; flex-direction: column ; align-items: center; justify-content: center; ">
+          <div style="margin-top: 50px;">
+            <h1 style="text-align: center;">Add User</h1>
+          </div>
+          <div style="width: 30%; ">
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form method="post" action="http://localhost:3000/user/" target="dummyframe">
+              <fieldset>
+                <div class="form-group">
+                  <label for="email" class="form-label mt-4">Email address</label>
+                  <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="firstName" class="form-label mt-4">First Name</label>
+                  <input type="text" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="enter first name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label mt-4">Last Name</label>
+                  <input type="text" name="lastName" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="enter last name">
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label mt-4">Phone Number</label>
+                  <input type="text" name="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="enter phone number">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <button type="submit" id="post-button" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                </div>
+                <div id="form-message" style="display: flex; justify-content: center;">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div>
+          <footer class="footer" style ="display : flex; align-items: center; justify-content: center; margin-top: 100px;">
+              <div class="card border-light mb-3" style="width : 33%; height: 250px;" >
+                <div class="card-body">
+                  <h4 class="card-title">PDMR Pvt Ltd</h4>
+                  <p class="card-text">An organization, no matter how well designed, is only as good as the people who live and work in it. — Dee Ward Hock Our value systems have evolved firmly around this belief.</p>
+                </div>
+              </div>        
+              <div class="card border-light mb-3" style="width : 33% ; height: 250px">
+                <div class="card-body">
+                  <h4 class="card-title">Services</h4>
+                  <p class="card-text">
+                    <div style="display: flex;">
+                        <ul>
+                          <li>Content Development</li>
+                          <li>Editorial Services</li>
+                          <li>Composition</li>
+                          <li>Data Mining</li>
+                        </ul>
+                        <ul>
+                          <li>Digitization Services</li>
+                          <li>E-books & E-learning</li>
+                          <li>Indexing Services</li>
+                          <li>XML-First Workflow</li>
+                        </ul>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-light mb-3" style="width : 33% ; height: 250px">
+                <div class="card-body">
+                  <h4 class="card-title">Contact Us</h4>
+                  <h5>Address</h5>
+                  <p class="card-text">No 10, Neeli veera samy street 2nd lane, Triplicane, Chennai - 600005 </p>
+                  <h5>Phone Number</h5>
+                  <p>8825933760</p>
+                </div>
+              </div>
+          </footer> 
+        </div>
+      </div>
+      <script src="./adduser.js"></script>
+  </body>
+</html>

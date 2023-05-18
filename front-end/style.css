@@ -1,0 +1,43 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    background-color: blueviolet;
+    
+}
+th{
+    color: red;
+    font-weight: bolder
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-all{
+    margin-bottom: 50px;
+}
+
+.post-user{
+    margin-bottom: 50px;
+}
+
+.get-user{
+    margin-bottom: 50px;
+}
+
+.delete-user{
+    margin-bottom: 50px;
+}
+
+.update-user{
+    margin-bottom: 50px;
+}
