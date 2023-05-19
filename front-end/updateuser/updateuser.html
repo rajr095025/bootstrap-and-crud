@@ -18,7 +18,7 @@
               <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="../home/home.html">Home
+                    <a class="nav-link active" href="../../index.html">Home
                       <span class="visually-hidden">(current)</span>
                     </a>
                   </li>
@@ -60,12 +60,47 @@
             </div>
           </nav>
         </div>
+        <div style="display: flex; flex-direction: column ; align-items: center; justify-content: center;  margin-bottom: 100px; ">
+          <div style="margin-top: 50px;">
+            <h1 style="text-align: center;">Update User</h1>
+          </div>
+          <div style="width: 30%; ">
+            <form id="get-update-form">
+              <fieldset>
+                <div class="form-group">
+                  <label for="email" class="form-label mt-4">Email address</label>
+                  <input type="text" name="email" class="form-control" id="get-user-email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="firstName" class="form-label mt-4">First Name</label>
+                  <input type="text" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="enter first name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label mt-4">Last Name</label>
+                  <input type="text" name="lastName" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="enter last name">
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label mt-4">Phone Number</label>
+                  <input type="text" name="phone" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="enter phone number">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <button type="submit" id="post-button" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                </div>
+                <div id="form-message" style="display: flex; justify-content: center;">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
         <div>
           <footer class="footer" style ="display : flex; align-items: center; justify-content: center;">
               <div class="card border-light mb-3" style="width : 33%; height: 250px;" >
                 <div class="card-body">
                   <h4 class="card-title">PDMR Pvt Ltd</h4>
-                  <p class="card-text">An organization, no matter how well designed, is only as good as the people who live and work in it. — Dee Ward Hock Our value systems have evolved firmly around this belief.</p>
+                  <p class="card-text">An organization, no matter how well designed, is only as good as the people who live and work in it.</p>
+                  <p class="card-text" style="text-align: right;"> — Dee Ward Hock</p>
+                  <p class="card-text">Our value systems have evolved firmly around this belief.</p>
                 </div>
               </div>        
               <div class="card border-light mb-3" style="width : 33% ; height: 250px">
@@ -101,6 +136,6 @@
           </footer> 
         </div>
       </div>
-      <script src="../main.js"></script>
+      <script src="../updateuser/updateuser.js"></script>
   </body>
 </html>
