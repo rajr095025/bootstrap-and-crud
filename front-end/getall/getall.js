@@ -18,8 +18,8 @@ function getAll(){
                 <td>${user.phone}</td>  
                 <td>
                     <div class="options" style = "display: flex; justify-content: space-evenly;">
-                        <i onClick="editPost(this)" class="fas fa-edit" data-bs-toggle="modal" data-bs-target="#form" style="color:black;" id = "${user._id}"></i>
-                        <i onClick="deletePost(this)" class="fas fa-trash-alt" style="color:black; " id = "${user._id}"></i>
+                        <i onClick="editPost(this)" class="fas fa-edit" data-bs-toggle="modal" data-bs-target="#form" style="color:black; cursor: pointer;" id = "${user._id}"></i>
+                        <i onClick="deletePost(this)" class="fas fa-trash-alt" style="color:black; cursor: pointer; " id = "${user._id}"></i>
                     </div>
                 </td>
               </tr>`;
